@@ -28,7 +28,7 @@ class DownloadBook {
      // let url = `https://www.safaribooksonline.com/api/v1/book/${this.bookId}/`
     
     //my url below
-    //https://www.opensource.gov/providers/safari/9781118206911/navPoint-106
+    //https://providers/safari/9781118206911/navPoint-106
     
     let match = url.match(/[^\/]+\/(\w+)\//)
     let bookId = match && match[1]
@@ -41,7 +41,7 @@ class DownloadBook {
   }
 
   getBookInfo() {
-    let url = `https://www.opensource.gov/providers/safari/${this.bookId}/`
+    let url = `/providers/safari/${this.bookId}/`
     // let url = `https://www.safaribooksonline.com/api/v1/book/${this.bookId}/`
     return this.get(url)
   }
