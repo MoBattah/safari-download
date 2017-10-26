@@ -41,7 +41,7 @@ class DownloadBook {
   }
 
   getBookInfo() {
-    let url = `https://www.opensource.gov/providers/safari/${this.bookId}/`
+    let url = `https://www.opensource.gov/${this.bookId}/`
     // let url = `https://www.safaribooksonline.com/api/v1/book/${this.bookId}/`
     return this.get(url)
   }
