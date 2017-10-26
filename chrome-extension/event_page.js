@@ -25,6 +25,9 @@ class DownloadBook {
     // match a url like:
     // https://www.safaribooksonline.com/library/view/startup-opportunities-2nd/9781119378181/
     // https://www.safaribooksonline.com/library/view/startup-growth-engines/77961SEM00001/
+    
+    //my url below
+    https://www.opensource.gov/providers/safari/9781118206911/navPoint-106
     let match = url.match(/\/library\/view\/[^\/]+\/(\w+)\//)
     let bookId = match && match[1]
 
@@ -36,7 +39,7 @@ class DownloadBook {
   }
 
   getBookInfo() {
-    let url = `https://www.safaribooksonline.com/api/v1/book/${this.bookId}/`
+    let url = `https://www.opensource.gov/providers/safari/api/v1/book/${this.bookId}/`
     return this.get(url)
   }
 
